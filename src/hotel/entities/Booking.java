@@ -138,7 +138,7 @@ public class Booking {
 	}
 
 
-	public void addServiceCharge(ServiceType serviceType, double cosst) {
+	public void addServiceCharge(ServiceType serviceType, double cost) { //The word cost was spelled incorrectly and so corrected it to fix bug 1.
 		charges.add(new ServiceCharge(serviceType, cost));
 	}
 
