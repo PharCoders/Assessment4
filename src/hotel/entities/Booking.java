@@ -150,6 +150,11 @@ public class Booking {
 
 
 	public void checkOut() {
+		
+		//This is the booking.checkOut method.
+		//Here the state was not changed. Thus I changed it and fixed Bug 2
+		state = State.CHECKED_OUT;
+		
 		room.checkout(this);
 	}
 
