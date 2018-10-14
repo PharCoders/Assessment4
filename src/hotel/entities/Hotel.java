@@ -126,6 +126,11 @@ public class Hotel {
 			throw new RuntimeException(mesg);
 		}
 		booking.checkOut();
+		
+		//This is hotel.checkout method.
+		//In this method the object was not removed from the HashMap
+		//Thus I removed it and fixed Bug 2
+		activeBookingsByRoomId.remove(roomId);
 	}
 
 
