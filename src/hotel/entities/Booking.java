@@ -135,6 +135,7 @@ public class Booking {
 
 	public void checkIn() {
 		room.checkin();
+		state = State.CHECKED_IN; //added the missing line to fix the bug 2 as it is not changing the state.
 	}
 
 
@@ -145,6 +146,7 @@ public class Booking {
 
 	public void checkOut() {
 		room.checkout(this);
+		state = State.CHECKED_OUT; //added the missing line to fix the bug 2 as it is not changing the state.
 	}
 
 }
