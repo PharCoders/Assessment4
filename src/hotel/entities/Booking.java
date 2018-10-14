@@ -134,6 +134,11 @@ public class Booking {
 
 
 	public void checkIn() {
+		
+		//This is the bookings.ckeckIn method. 
+		//Here the state was not changed. Thus I changed it and fixed Bug 2
+		state = State.CHECKED_IN;
+		
 		room.checkin();
 	}
 
