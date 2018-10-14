@@ -72,6 +72,7 @@ public class Room {
 
 
 	public void checkout(Booking booking) {
+		bookings.remove(booking); // added the missing statement to remove the booking from the bookings to fix bug 2.
 		state = state.READY;
 	}
 
