@@ -73,6 +73,11 @@ public class Room {
 
 	public void checkout(Booking booking) {
 		state = state.READY;
+		
+		//This is room.chackout method.
+		//Here the object was not removed from the bookings list
+		//Thus I removed it and fixed bug2
+		bookings.remove(booking);
 	}
 
 
